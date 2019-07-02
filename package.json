@@ -18,6 +18,7 @@
   "homepage": "https://github.com/prisma/graphql-yoga",
   "scripts": {
     "prepublish": "yarn build",
+    "prepare": "yarn build",
     "build": "rm -rf dist && tsc -d",
     "lint":
       "tslint --project tsconfig.json {src,test}/**/*.ts && prettier-check --ignore-path .gitignore {src,.}/{*.ts,*.js}",
